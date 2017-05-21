@@ -12,7 +12,7 @@ png(file = "plot4.png", width = 480, height = 480)
 par(mfrow = c(2, 2))
 dt <- as.POSIXct(paste(x$Date, x$Time))
 plot(dt, x$Global_active_power, type = "l", xlab = "",
-     ylab = "Global Active Power (kilowatts)")
+     ylab = "Global Active Power")
 plot(dt, x$Voltage, type = "l", xlab = "datetime", ylab = "Voltage")
 plot(dt, x$Sub_metering_1, type = "l", xlab = "", 
      ylab = "Energy sub metering")
